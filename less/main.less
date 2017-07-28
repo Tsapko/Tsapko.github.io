@@ -73,7 +73,7 @@ html {
 #content-section {
     max-width: 752px;
     margin: 0 54px 60px;
-    /* hello section */
+/* hello section */
     .hello-section {
         h1 {
             margin: 0;
@@ -87,10 +87,10 @@ html {
         }
         p {
             line-height: 22px;
-            color: #666665;
+            color: #d8d8d8;
         }
     }
-    /* experience section */
+/* experience section */
     .experience-section {
         div {
             h3 {
@@ -103,7 +103,7 @@ html {
                 color: #3f964e;
             }
             p {
-                color: #666665;
+                color: #d8d8d8;
                 line-height: 22px;
             }
         }
@@ -117,8 +117,12 @@ html {
         line-height: 28px;
         cursor: pointer;
         position: relative;
-        color: #fff;
+        color: #666665;
         background: transparent;
+        &:hover {
+            color: @primary;
+            transition: All 0.3s ease;
+        }
     }
     .experience-section input[type="radio"]:checked + label {
         color: @primary;
@@ -130,27 +134,100 @@ html {
     .experience-section > input:nth-of-type(5):checked ~ div:nth-of-type(5) {
         display: block;
     }
-    /* skills section */
-    
-    /* works section */
+/* skills section */
+    .skills-section {
+        div {
+            h3 {
+                font-weight: 100;
+                color: #fff;
+                font-size: 28px;
+                margin-bottom: 0;
+            }
+            h5 {
+                margin-top: 6px;
+                color: #3f964e;
+            }
+        }
+    }
+    .skills-section > div,
+    .skills-section > input {
+        display: none;
+    }
+    .skills-section label {
+        padding: 0 22px 0 0;
+        line-height: 28px;
+        cursor: pointer;
+        position: relative;
+        color: #666665;
+        background: transparent;
+        &:hover {
+            color: @primary;
+            transition: All 0.3s ease;
+        }
+    }
+    .skills-section input[type="radio"]:checked + label {
+        color: @primary;
+    }
+    .skills-section > input:nth-of-type(1):checked ~ div:nth-of-type(1),
+    .skills-section > input:nth-of-type(2):checked ~ div:nth-of-type(2),
+    .skills-section > input:nth-of-type(3):checked ~ div:nth-of-type(3),
+    .skills-section > input:nth-of-type(4):checked ~ div:nth-of-type(4) {
+        display: flex;
+            div {
+                margin-right: 72px;
+            }
+    }
+/* works section */
 
-    /* btn section */    
+/* btn section */    
     div.but-section {
-        padding: 22px 0;
-        margin: 60px 0 120px;
-        a.btn-nav {
+        margin: 0 0 120px;
+        display: flex;
+        a.btn-main {
             color: @primary;
             background-color: transparent;
             border: 2px solid @primary;
             border-radius: 80px;
             margin-top: 40px;
             padding: 20px 50px;
-            text-transform: uppercase;
             text-decoration: none;
             &:hover {
                 color: #000;
                 background-color: @primary;
                 border: 2px solid @primary;
+                transition: All 0.3s ease;;
+            }
+        }
+        a.btn-nav-left {
+            font-size: 14px;
+            color: #666665;
+            background-color: transparent;
+            border: 1px solid #666665;
+            border-radius: 80px;
+            margin-top: 20px;
+            padding: 8px 12px;
+            text-decoration: none;
+            &:hover {
+                color: #000;
+                background-color: @primary;
+                border: 1px solid @primary;
+                transition: All 0.3s ease;;
+            }
+        }
+        a.btn-nav-right {
+            font-size: 14px;
+            color: #666665;
+            background-color: transparent;
+            border: 1px solid #666665;
+            border-radius: 80px;
+            margin-top: 20px;
+            margin-left: auto;
+            padding: 8px 12px; 
+            text-decoration: none;
+            &:hover {
+                color: #000;
+                background-color: @primary;
+                border: 1px solid @primary;
                 transition: All 0.3s ease;;
             }
         }
