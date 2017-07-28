@@ -73,16 +73,53 @@ html body {
   /* btn section */
 }
 #content-section .hello-section h1 {
-  margin-bottom: 0;
+  margin: 0;
   font-size: 54px;
   color: #fff;
+  font-weight: 100;
 }
 #content-section .hello-section h2 {
-  color: #ffe34a;
+  margin-top: 7px;
+  color: #3f964e;
 }
 #content-section .hello-section p {
   line-height: 22px;
+  color: #666665;
+}
+#content-section .experience-section div h3 {
   color: #fff;
+  font-size: 28px;
+  margin-bottom: 0;
+}
+#content-section .experience-section div h5 {
+  margin-top: 6px;
+  color: #3f964e;
+}
+#content-section .experience-section div p {
+  color: #666665;
+  line-height: 22px;
+}
+#content-section .experience-section > div,
+#content-section .experience-section > input {
+  display: none;
+}
+#content-section .experience-section label {
+  padding: 0 22px 0 0;
+  line-height: 28px;
+  cursor: pointer;
+  position: relative;
+  color: #fff;
+  background: transparent;
+}
+#content-section .experience-section input[type="radio"]:checked + label {
+  color: #ffe34a;
+}
+#content-section .experience-section > input:nth-of-type(1):checked ~ div:nth-of-type(1),
+#content-section .experience-section > input:nth-of-type(2):checked ~ div:nth-of-type(2),
+#content-section .experience-section > input:nth-of-type(3):checked ~ div:nth-of-type(3),
+#content-section .experience-section > input:nth-of-type(4):checked ~ div:nth-of-type(4),
+#content-section .experience-section > input:nth-of-type(5):checked ~ div:nth-of-type(5) {
+  display: block;
 }
 #content-section div.but-section {
   padding: 22px 0;
