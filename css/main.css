@@ -73,6 +73,7 @@ html body {
   /* btn section */
 }
 #content-section .hello-section h1 {
+  margin-bottom: 0;
   font-size: 54px;
   color: #fff;
 }
@@ -80,6 +81,7 @@ html body {
   color: #ffe34a;
 }
 #content-section .hello-section p {
+  line-height: 22px;
   color: #fff;
 }
 #content-section div.but-section {
