@@ -1,0 +1,166 @@
+/* colors */
+@primary: #ffe34a;
+@body-text: #ffffff;
+
+/* global */
+html {
+    position: relative;
+    min-height: 100%;
+    body {
+        font-family: 'Raleway', sans-serif;
+        /* Margin bottom by footer height */
+        margin: 0 0 60px;
+        background: url('/images/main-bg.jpg') no-repeat center center fixed;  
+        background-size: cover;
+    }
+}
+
+/* header section*/
+#main-header {
+    width: 100%;
+    background: transparent;
+    #logo-mobile-checkbox {
+        display: none;
+    }
+    /* logo */
+    .logo-desktop {
+        margin: 40px 60px;
+        display: block;
+        float: left;
+    }
+    .logo-mobile {
+        visibility: hidden;
+        padding: 20px;
+        position: absolute;
+        right: 10%;
+        bottom: 10%;
+        background: #aaa;
+        border-radius: 50%;
+    }
+    /* main nav */
+    #main-topnav {
+        ul {
+            margin: 0;
+            padding: 80px 60px;
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            li {
+                margin: 0 10px;
+                a {
+                    display: block;
+                    padding: 15px 20px;
+                    color: #fff;
+                    text-decoration: none;
+                    &:hover {
+                        background-color: @primary;
+                        border-radius: 80px;
+                        color: #000;
+                        transition: All 0.3s ease;
+                    }
+                }
+                .active {
+                    background-color: @primary;
+                    border-radius: 80px;
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+
+/* content section */
+#content-section {
+    max-width: 752px;
+    margin: 0 54px 60px;
+    /* hello section */
+    .hello-section {
+        h1 {
+        font-size: 54px;
+        color: #fff;
+        }
+        h2 {
+            color: @primary;
+        }
+        p {
+            color: #fff;
+        }
+    }
+    /* experience section */
+    
+    /* skills section */
+    
+    /* works section */
+
+    /* btn section */    
+    div.but-section {
+        padding: 22px 0;
+        margin: 60px 0 120px;
+        a.btn-nav {
+            color: @primary;
+            background-color: transparent;
+            border: 2px solid @primary;
+            border-radius: 80px;
+            margin-top: 40px;
+            padding: 20px 50px;
+            text-transform: uppercase;
+            text-decoration: none;
+            &:hover {
+                color: #000;
+                background-color: @primary;
+                border: 2px solid @primary;
+                transition: All 0.3s ease;;
+            }
+        }
+    }
+}
+
+/* media queries */
+@media (max-width:768px) {
+    #main-header {
+        /* logo */
+        .logo-desktop {
+            visibility: hidden;
+        }
+        .logo-mobile {
+            visibility: visible;
+            z-index: 50;
+        }
+        /* main nav */
+        #main-topnav {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            background-color: rgba(0,0,0,.7);
+            opacity: 0;
+            visibility: hidden;
+            cursor: pointer;
+            transition: all .3s ease;
+            ul {
+                display: block;
+                margin: 30%;
+                text-align: center;
+            }
+        }
+        #logo-mobile-checkbox:checked ~ #main-topnav {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+/* footer */
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: #101010;
+    .text-muted-footer {
+        color: #272727;
+        text-align: center;
+        padding: 6px;
+        margin: 14px;
+    }
+}
