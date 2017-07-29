@@ -178,7 +178,94 @@ html {
             }
     }
 /* works section */
-
+    .works-section {
+        div {
+            h3 {
+                font-weight: 100;
+                color: #fff;
+                font-size: 28px;
+                margin-bottom: 0;
+            }
+            h5 {
+                margin-top: 6px;
+                color: #3f964e;
+            }
+            p {
+                color: #d8d8d8;
+                line-height: 22px;
+            }
+        }
+        /* slider */
+        .slides-wrapper {
+            position: relative;
+            margin: 20px 0;
+            .slide-text {
+                margin: 0 30px;
+                h3 {
+                    margin-top: 0;
+                }
+                .view-btn {
+                    font-size: 22px;
+                    color: #666665;
+                    text-decoration: none;
+                    &:hover {
+                        color: @primary;
+                        transition: All 0.3s ease;;
+                    }
+                }
+            }
+            .slides1, .slides2, .slides3, .slides4 {
+                img {
+                    border-radius: 18px;
+                    width: 232px;
+                    height: 232px;
+                }
+            }
+            button.slide-btn-left {
+                cursor: pointer;
+                background: transparent;
+                border: 0;
+                width: 52px;
+                position: absolute;
+                top: 100px;
+                left: -52px;
+            }
+            button.slide-btn-right {
+                cursor: pointer;
+                background: transparent;
+                border: 0;
+                width: 52px;
+                position: absolute;
+                top: 100px;
+                right: -22px;
+            }
+        }
+    }
+    .works-section > div,
+    .works-section > input {
+        display: none;
+    }
+    .works-section label {
+        padding: 0 22px 0 0;
+        line-height: 28px;
+        cursor: pointer;
+        position: relative;
+        color: #666665;
+        background: transparent;
+        &:hover {
+            color: @primary;
+            transition: All 0.3s ease;
+        }
+    }
+    .works-section input[type="radio"]:checked + label {
+        color: @primary;
+    }
+    .works-section > input:nth-of-type(1):checked ~ div:nth-of-type(1),
+    .works-section > input:nth-of-type(2):checked ~ div:nth-of-type(2),
+    .works-section > input:nth-of-type(3):checked ~ div:nth-of-type(3),
+    .works-section > input:nth-of-type(4):checked ~ div:nth-of-type(4) {
+        display: block;
+    }
 /* btn section */    
     div.but-section {
         margin: 0 0 120px;
