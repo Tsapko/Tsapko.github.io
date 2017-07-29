@@ -70,6 +70,7 @@ html body {
   /* experience section */
   /* skills section */
   /* works section */
+  /* сontacts-section */
   /* btn section */
 }
 #content-section .hello-section h1 {
@@ -252,6 +253,54 @@ html body {
 #content-section .works-section > input:nth-of-type(3):checked ~ div:nth-of-type(3),
 #content-section .works-section > input:nth-of-type(4):checked ~ div:nth-of-type(4) {
   display: block;
+}
+#content-section .сontacts-section h3 {
+  font-weight: 100;
+  color: #fff;
+  font-size: 28px;
+  margin-bottom: 0;
+}
+#content-section .сontacts-section p {
+  color: #d8d8d8;
+  line-height: 22px;
+}
+#content-section .сontacts-section form input,
+#content-section .сontacts-section form textarea {
+  font-weight: 900;
+  color: #000;
+  font-family: 'Raleway', sans-serif;
+  padding: 0 20px;
+  font-size: 14px;
+  margin: 20px 0;
+  display: block;
+  width: 50%;
+  background: #fff;
+  border: 1px solid #d8d8d8;
+  border-radius: 7px;
+}
+#content-section .сontacts-section form input {
+  height: 40px;
+}
+#content-section .сontacts-section form textarea {
+  padding: 12px 20px;
+}
+#content-section .сontacts-section form input.btn-main {
+  width: 138px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #ffe34a;
+  background-color: transparent;
+  border: 2px solid #ffe34a;
+  border-radius: 80px;
+  margin-top: 40px;
+  padding: 0 50px;
+  text-decoration: none;
+}
+#content-section .сontacts-section form input.btn-main:hover {
+  color: #000;
+  background-color: #ffe34a;
+  border: 2px solid #ffe34a;
+  transition: All 0.3s ease;
 }
 #content-section div.but-section {
   margin: 0 0 120px;
