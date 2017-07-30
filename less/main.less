@@ -31,14 +31,15 @@ html {
     .logo-mobile {
         visibility: hidden;
         padding: 20px;
-        position: absolute;
+        position: fixed;
         right: 10%;
         bottom: 10%;
-        background: #aaa;
+        background: rgba(80, 80, 80, 0.5);
         border-radius: 50%;
     }
     /* main nav */
     #main-topnav {
+        z-index: 1;
         ul {
             margin: 0;
             padding: 80px 60px;
@@ -196,7 +197,7 @@ html {
             }
         }
         /* slider */
-        .slides-wrapper {
+        .tabs {
             position: relative;
             margin: 20px 0;
             .slide-text {
@@ -214,30 +215,14 @@ html {
                     }
                 }
             }
-            .slides1, .slides2, .slides3, .slides4 {
+            .block-item {
+                display: flex;
+                margin: 40px 0 70px;
                 img {
                     border-radius: 18px;
                     width: 232px;
                     height: 232px;
                 }
-            }
-            button.slide-btn-left {
-                cursor: pointer;
-                background: transparent;
-                border: 0;
-                width: 52px;
-                position: absolute;
-                top: 100px;
-                left: -52px;
-            }
-            button.slide-btn-right {
-                cursor: pointer;
-                background: transparent;
-                border: 0;
-                width: 52px;
-                position: absolute;
-                top: 100px;
-                right: -22px;
             }
         }
     }
@@ -376,13 +361,17 @@ html {
 /* media queries */
 @media (max-width:768px) {
     #main-header {
+        height: 50px;
         /* logo */
         .logo-desktop {
+            display: none;
             visibility: hidden;
+            margin: 0;
+            float: none;
         }
         .logo-mobile {
             visibility: visible;
-            z-index: 50;
+            z-index: 2;
         }
         /* main nav */
         #main-topnav {
@@ -396,13 +385,36 @@ html {
             transition: all .3s ease;
             ul {
                 display: block;
-                margin: 30%;
+                margin: 0;
+                padding: 160px 60px;
                 text-align: center;
             }
         }
         #logo-mobile-checkbox:checked ~ #main-topnav {
             opacity: 1;
             visibility: visible;
+        }
+    }
+    .btn-main {
+        text-align: center;
+    }
+    #content-section {
+        .works-section {
+            .tabs {
+                .slide-text {
+                    margin: 30px 0 60px;
+                }
+                .block-item {
+                    display: block;
+                }
+            }
+        }
+        .сontacts-section {
+            form {
+                input, textarea {
+                    width: 80%;
+                }
+            }
         }
     }
 }
