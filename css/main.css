@@ -9,6 +9,7 @@ canvas{
   height: 100vh;
 }
 input{
+  display: none;
   width: 250px;
   height: 40px;
   line-height: 40px;
