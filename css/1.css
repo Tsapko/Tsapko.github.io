@@ -1,0 +1,101 @@
+
+/* colors */
+/* global */
+html {
+  position: relative;
+  min-height: 100%;
+}
+html body {
+  font-family: 'Quicksand', sans-serif;
+  /* Margin bottom by footer height */
+  margin: 0 0 60px;
+  background-color: #2F2F2F;
+  /* background: url('/img/svg/logo-bg.svg') no-repeat center center fixed; */
+  background-size: cover;
+}
+/* header section*/
+#main-header {
+  width: 100%;
+  background: transparent;
+  /* logo */
+  /* main nav */
+}
+#main-header #logo-mobile-checkbox {
+  display: none;
+}
+#main-header .logo-desktop {
+  margin: 40px 60px;
+  display: block;
+  float: left;
+}
+#main-header .logo-mobile {
+  visibility: hidden;
+  padding: 6px;
+  position: fixed;
+  top: 6%;
+  left: 10%;
+  /* background: rgba(80, 80, 80, 0.5); */
+  /* border-radius: 50%; */
+}
+#main-header #main-topnav {
+  z-index: 1;
+}
+#main-header #main-topnav ul {
+  margin: 0;
+  padding: 80px 60px;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+#main-header #main-topnav ul li {
+  margin: 0 10px;
+}
+#main-header #main-topnav ul li a {
+  display: block;
+  padding: 15px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+#main-header #main-topnav ul li a:hover {
+  background-color: #ffe34a;
+  border-radius: 80px;
+  color: #000;
+  transition: All 0.3s ease;
+}
+#main-header #main-topnav ul li .active {
+  background-color: #ffe34a;
+  border-radius: 80px;
+  color: #000;
+}
+
+/* hero text */
+#last-name {
+  font-family: 'Abril Fatface', cursive, sans-serif;
+}
+#first-name {
+  font-family: 'Abril Fatface', cursive, sans-serif;
+}
+#position {
+  font-family: 'Bebas Neue', cursive, sans-serif;
+}
+#info {
+  
+}
+
+/* media queries */
+
+/* footer */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #101010;
+}
+.footer .text-muted-footer {
+  color: #272727;
+  text-align: center;
+  padding: 6px;
+  margin: 14px;
+}

@@ -1,26 +1,30 @@
-body{
-  margin:0;
-  overflow: hidden;
-  font-size:0;
+/*
+
+COLORS 
+bg - background-color: #2F2F2F;
+
+FONTS
+font-family: 'Quicksand', sans-serif;
+font-family: 'Abril Fatface', cursive, sans-serif;
+font-family: 'Bebas Neue', cursive, sans-serif;
+
+*/
+
+@import url("/css/header.css");
+@import url("/css/hero-text.css");
+@import url("/css/main-nav.css");
+@import url("/css/footer.css");
+/* @import url("/css/media-queries/max-width-768.css"); */
+
+html {
+  position: relative;
+  min-height: 100%;
 }
-canvas{
-  background: black;
-  width: 100vw;
-  height: 100vh;
-}
-input{
-  display: none;
-  width: 250px;
-  height: 40px;
-  line-height: 40px;
-  position: absolute;
-  bottom: 35px;
-  left: calc(50% - 125px);
-  background: none;
-  color: white;
-  font-size: 30px;
-  font-family: arial;
-  text-align: center;
-  border: 1px solid white;
-  background: rgba(255,255,255,0.2);
+html body {
+  font-family: 'Quicksand', sans-serif;
+  /* Margin bottom by footer height */
+  margin: 0 0 60px;
+  background: url('/img/svg/logo-bg.svg') no-repeat center center fixed;
+  background-color: #2F2F2F;
+  background-size: cover;
 }

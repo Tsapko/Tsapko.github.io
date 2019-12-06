@@ -1,0 +1,24 @@
+/* h1 {
+  color: #fff;
+} */
+
+.branding {
+  margin: 48px;
+}
+
+#main-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+#main-nav li:hover {
+  background: rgba(0,0,0,0.3);
+}
+#main-nav li a {
+  display: block;
+  padding: 15px 20px;
+  color: #fff;
+  text-decoration: none;
+}

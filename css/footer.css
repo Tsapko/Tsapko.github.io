@@ -1,0 +1,43 @@
+/* h1 {
+  color: #fff;
+} */
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+}
+/* .footer .text-muted-footer {
+  color: #272727;
+  text-align: center;
+  padding: 6px;
+  margin: 14px;
+} */
+
+.footer-text {
+  position: absolute;
+left: 23.78%;
+right: 18.91%;
+top: 93.38%;
+bottom: 2.64%;
+
+font-family: 'Quicksand', sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+text-transform: uppercase;
+
+color: #5f5f5f;
+}
+
+#copyright-icon {
+  position: absolute;
+    left: 19.17%;
+    right: 77.59%;
+    top: 95.1%;
+    bottom: 2.85%;
+    opacity: 10%;
+}

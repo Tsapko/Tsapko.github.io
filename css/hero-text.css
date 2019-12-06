@@ -1,0 +1,72 @@
+/* h1 {
+  color: #fff;
+} */
+
+#last-name {
+  position: absolute;
+  width: 209.74px;
+  height: 84.52px;
+  left: 38px;
+  top: 105px;
+
+  font-family: Abril Fatface;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 62.6087px;
+  line-height: 84px;
+  /* identical to box height */
+
+  /* 4 */
+  color: #444444;
+}
+#first-name {
+  position: absolute;
+  width: 154.02px;
+  height: 61.36px;
+  left: 165.98px;
+  top: 178.25px;
+
+  font-family: Abril Fatface;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 45.0783px;
+  line-height: 61px;
+
+  /* 4 */
+  color: #444444;
+}
+
+#position {
+  position: absolute;
+  width: 151px;
+  height: 19px;
+  left: 40px;
+  top: 275px;
+  
+  font-family: 'Bebas Neue', cursive, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  
+  color: #FFFFFF;
+}
+
+#info {
+  position: absolute;
+  width: 279px;
+  height: 154px;
+  left: 40px;
+  top: 310px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 23px;
+
+  color: #A4A4A4;
+}
